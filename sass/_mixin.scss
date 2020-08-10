@@ -1,0 +1,9 @@
+@mixin menu_toggler {
+  content: '';
+  background: $secondaryColor;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  transition: 0.3s ease;
+}

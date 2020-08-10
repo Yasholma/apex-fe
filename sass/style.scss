@@ -1,0 +1,894 @@
+@import './variables';
+@import './mixin';
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 1rem;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+// *** Overrides
+.btn {
+  border-radius: 0.3125rem;
+}
+
+// *** Header Styling *** //
+.logo {
+  width: 70px;
+}
+
+.bar {
+  background: $secondaryColor;
+  display: inline-block;
+  width: 33px;
+  height: 2px;
+  position: relative;
+  margin-bottom: 0.3rem;
+  transition: 0.3s ease;
+}
+
+.bar::before {
+  top: -8px;
+  @include menu_toggler;
+}
+
+.bar::after {
+  top: 8px;
+  @include menu_toggler;
+}
+
+.navbar-toggler[aria-expanded='true'] .bar {
+  background: transparent;
+}
+
+.navbar-toggler[aria-expanded='true'] .bar::before {
+  transform: rotate(45deg) translateY(11px);
+}
+
+.navbar-toggler[aria-expanded='true'] .bar::after {
+  transform: rotate(-45deg) translateY(-12px);
+}
+
+.navbar {
+  background: $bgColor;
+}
+
+.nav-item {
+  margin-bottom: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+.btn-get-started {
+  font-size: 0.8rem;
+  background: $whiteColor;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+
+.btn-get-started:hover {
+  background: $primaryColor;
+  color: $darkColor;
+}
+
+.btn-primary {
+  background: $primaryColor;
+  border-color: $primaryColor;
+  font-size: 0.8rem;
+  border-radius: 0.3125rem;
+  padding: 0.75rem 2.8rem;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: $primaryColor;
+  color: $primaryColor;
+}
+
+#hero {
+  height: auto;
+  // min-height: 100vh;
+  position: relative;
+  background: $bgColor;
+  padding-top: 6.4rem;
+}
+
+.hero-img {
+  position: relative;
+  transform: rotate(90deg);
+  bottom: 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.hero-heading {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.hero-text {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 88%;
+  margin: 0 auto 1rem;
+}
+
+.arrow-down {
+  display: none;
+}
+
+.arrow-up-mobile {
+  position: fixed;
+  bottom: 1rem;
+  right: 0;
+  transition: 0.3s ease;
+}
+
+.arrow-up-mobile:hover {
+  transform: translateY(-5px);
+}
+
+// *** Download Section ***
+#download {
+  background: $secondaryColor;
+  padding: 4rem 0;
+  color: $whiteColor;
+}
+
+.download-heading {
+  text-align: center;
+  font-size: 1.7rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-text {
+  font-size: 1rem;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.download-text,
+.download-icons {
+  display: none;
+}
+
+.download-icons img {
+  transition: 0.3s ease;
+}
+
+.download-icons img:hover {
+  transform: translateY(3px) scale(0.99);
+}
+
+.download-text.mobile,
+.download-icons.mobile {
+  display: block;
+  text-align: center;
+}
+
+.download-icons.mobile {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.download-img svg {
+  width: 250px;
+  margin: -6rem 0;
+}
+
+.download-icons a img {
+  width: 9.375rem;
+  border-radius: 0.625rem;
+}
+
+// *** Guide Section ***
+#guide {
+  background: $primaryColor;
+  padding: 4rem 0 3rem;
+  color: $whiteColor;
+}
+
+.guide-top-heading {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.guide-card {
+  background: $whiteColor;
+  margin-bottom: 1rem;
+  border-radius: 0.625rem;
+  position: relative;
+  color: $textColor;
+  padding: 0.5rem;
+}
+
+.watermark {
+  position: absolute;
+  top: -0.5rem;
+  right: 0.3rem;
+
+  p {
+    font-weight: 600;
+    color: rgba(253, 143, 10, 0.05);
+    font-size: 4rem;
+  }
+}
+
+.guide-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.guide-text {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.learn-more {
+  transition: 0.3s ease;
+  display: inline-block;
+  svg {
+    width: 15px;
+  }
+
+  &:hover {
+    transform: translateX(5px);
+    text-decoration: none;
+  }
+}
+
+// *** Trade Section ***
+#trade {
+  padding: 4rem 0;
+}
+
+.trade-heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.trade-text {
+  font-size: 1rem;
+  width: 86%;
+}
+
+.trade-guide-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  svg {
+    width: 15px;
+    margin-right: 0.8rem;
+  }
+}
+
+.trade-inc {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.trade-img {
+  width: 200px;
+}
+
+.trade-money {
+  margin-top: -1rem;
+  width: 280px;
+  padding-right: 2.3rem;
+}
+
+// *** App Section ***
+#app {
+  background: $secondaryColor;
+  padding: 2rem 0 0;
+  overflow: hidden;
+}
+
+.app-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-img {
+  margin-bottom: -2rem;
+}
+
+.app-download {
+  display: flex;
+  flex-direction: column;
+  a {
+    transition: 0.3s ease;
+    display: block;
+
+    &:hover {
+      transform: translateY(3px);
+    }
+  }
+  svg {
+    width: 150px;
+    path {
+      fill: $whiteColor;
+    }
+  }
+
+  .apple {
+    margin-bottom: -2.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+// *** Partner Section ***
+.partners {
+  padding: 3rem 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .partner {
+    width: 60px;
+    &:hover {
+      filter: invert(59%) sepia(62%) saturate(1577%) hue-rotate(352deg)
+        brightness(98%) contrast(104%);
+    }
+  }
+}
+
+// *** Join Section ***
+.join-content {
+  background: $secondaryColor;
+  padding: 3rem 1rem;
+  margin: 0 1rem 2.5rem;
+}
+
+.join-heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  width: 60%;
+  margin: 0 auto;
+}
+.join-text {
+  margin: 1rem auto 1.5rem;
+  opacity: 0.6;
+  font-weight: normal;
+  width: 82%;
+}
+
+// *** Footer ***
+#footer {
+  background: $whiteColor;
+  box-shadow: inset 0px 2px 0px rgba(70, 72, 85, 0.15);
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+#footer .col-md-2,
+#footer .col-2 {
+  padding-right: 0;
+}
+
+.footer-heading {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 2rem 0 1rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.footer-link-item {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.footer-special {
+  font-weight: normal;
+}
+
+.custom-input {
+  position: relative;
+  width: 80%;
+  .form-control {
+    font-family: $mainFont;
+    background: #fefefe;
+    border: none;
+    box-shadow: 0px 1px 50px rgba(49, 96, 153, 0.1);
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    padding-top: 1.3rem;
+    padding-bottom: 1.2rem;
+    font-size: 0.8rem;
+
+    &:focus {
+      box-shadow: 0 0 0.3rem $primaryColor;
+    }
+  }
+
+  .custom-btn {
+    background: $secondaryColor;
+    color: $whiteColor;
+    position: absolute;
+    right: 0;
+    font-size: 0.8rem;
+    padding: 0.6rem 1.3rem;
+    border-radius: 3px;
+
+    &:hover {
+      background: $primaryColor;
+    }
+  }
+}
+
+// Copyright
+.copyright-hr {
+  margin-top: 5rem;
+  border-top: 1px solid $textColor;
+}
+
+.copyright {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto 2rem;
+
+  .social-icon {
+    transition: 0.3s ease;
+    display: block;
+
+    &:hover {
+      transform: translateY(-3px) scale(1.09);
+    }
+  }
+}
+
+.footer-hr-links {
+  display: flex;
+  margin-top: 1rem;
+  .hr-link-item {
+    margin-right: 1rem;
+  }
+
+  &.right {
+    justify-content: flex-end;
+    text-align: right;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+// *** Keyframes ***
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+// Responsiveness (Media Query)
+
+@media screen and (min-width: 768px) {
+  .arrow-up-mobile,
+  .download-text.mobile,
+  .download-icons.mobile,
+  .mobile {
+    display: none;
+  }
+  #hero {
+    height: 100%;
+    padding-bottom: 0;
+    padding-top: 30vh;
+    padding-bottom: 3vh;
+    height: 100vh;
+  }
+  .hero-img {
+    position: absolute;
+    transform: rotate(0);
+    bottom: 0.5rem;
+    right: 0;
+    top: 5.375rem;
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .hero-content,
+  .hero-text {
+    text-align: left !important;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .arrow-down {
+    display: block;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 1s infinite ease-in-out;
+    img {
+      width: 40px;
+      margin-left: -20px;
+    }
+  }
+
+  .download-text,
+  .download-icons {
+    display: block;
+    width: 100%;
+  }
+
+  .download-heading {
+    text-align: left;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .download-text {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .download-icons {
+    .apple {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .download-img svg {
+    width: 300px;
+    margin: -6rem 0;
+  }
+
+  // Guides
+  .guide-top-heading {
+    margin-bottom: 2rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .guide-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .guide-card {
+    background: $whiteColor;
+    margin-bottom: 2rem;
+    padding: 0.8rem;
+    margin-left: initial;
+    margin-right: initial;
+    width: 300px;
+    margin-left: 1.3rem;
+  }
+
+  // App
+  #app {
+    padding: 5rem 0 0;
+  }
+  .app-heading {
+    font-size: 1.7rem;
+    color: $whiteColor;
+    margin-top: 8rem;
+    width: 70%;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .app-download {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+
+    .apple {
+      margin-bottom: 0;
+      margin-top: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  .partners {
+    padding: 5rem 0 4rem;
+  }
+
+  #join {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Footer
+  #footer .logo {
+    margin-top: 2rem;
+  }
+
+  .custom-input {
+    width: 100%;
+
+    .form-control {
+      font-size: 0.7rem;
+    }
+  }
+
+  // Copyright
+  .copyright-hr {
+    margin-top: 2rem;
+  }
+
+  .footer-hr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+  }
+
+  .footer-hr-links {
+    display: flex;
+    margin-top: 1.5rem;
+    .hr-link-item {
+      margin-right: 1rem;
+      font-size: 0.9rem;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+  }
+
+  .social-icons {
+    margin: 0 auto 0;
+    margin-left: auto;
+    float: right;
+  }
+
+  .copyright {
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+
+  .footer-copy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// ** Medium Screen
+@media screen and (min-width: 991px) {
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .nav-item.button {
+    margin-right: 0;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    width: 90%;
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .hero-img {
+    width: 45%;
+  }
+
+  #download {
+    padding: 8rem 0;
+  }
+
+  .download-heading {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .download-text {
+    font-size: 0.8rem;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .download-img svg {
+    width: 400px;
+  }
+
+  .guide-cards .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .guide-card {
+    max-width: 100%;
+    margin-left: 0;
+    width: 400px;
+    margin-bottom: 3rem;
+  }
+
+  .watermark {
+    top: -2rem;
+    right: 1.5rem;
+
+    p {
+      font-size: 8rem;
+    }
+  }
+
+  .guide-heading {
+    font-size: 1.875rem;
+    margin-top: 5rem;
+  }
+
+  .guide-text {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+
+  #trade {
+    padding: 6rem 0 5rem;
+  }
+
+  .trade-heading {
+    font-size: 2.5rem;
+    width: 205%;
+    margin-left: 0;
+  }
+
+  .trade-text {
+    font-size: 1.2rem;
+    width: 96%;
+    margin-bottom: 2rem;
+  }
+
+  .trade-guide-item {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    svg {
+      width: 15px;
+      margin-right: 0.8rem;
+    }
+  }
+
+  .trade-img {
+    width: 400px;
+  }
+
+  .trade-money {
+    margin-top: -1rem;
+    width: 450px;
+    padding-right: 1rem;
+  }
+
+  #app {
+    padding: 6rem 0 0;
+  }
+
+  .app-img {
+    width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-heading {
+    font-size: 2.3rem;
+    line-height: 45px;
+    margin-top: 6rem;
+    width: 65%;
+  }
+
+  .partners {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .nav-item.button {
+    margin-right: 0;
+  }
+
+  .btn-get-started {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    padding: 0.5rem 1.3rem;
+  }
+
+  .hero-heading {
+    font-size: 3.2rem;
+    width: 125%;
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+  }
+
+  .hero-img {
+    width: 47%;
+  }
+}
