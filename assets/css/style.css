@@ -654,7 +654,8 @@ ul {
   color: #ffffff;
 }
 
-#footer.bg-second .footer-link {
+#footer.bg-second .footer-link,
+#footer.bg-second .hr-link {
   color: #ffffff;
 }
 
@@ -959,19 +960,25 @@ ul {
   #trade {
     padding: 6rem 0 5rem;
   }
+  .trade-content {
+    margin-left: 0rem;
+  }
   .trade-heading {
     font-size: 2.5rem;
     width: 205%;
     margin-left: 0;
+    padding-left: 2rem;
   }
   .trade-text {
     font-size: 1.2rem;
     width: 96%;
     margin-bottom: 2rem;
+    padding-left: 2rem;
   }
   .trade-guide-item {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    padding-left: 2rem;
   }
   .trade-guide-item svg {
     width: 15px;

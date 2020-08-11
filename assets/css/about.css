@@ -35,6 +35,10 @@ ul {
   list-style: none;
 }
 
+.desktop {
+  display: none;
+}
+
 #about-hero {
   margin-top: 4.5rem;
   background: #f4f8fc;
@@ -297,4 +301,240 @@ ul {
 #network-footer {
   width: 100%;
   margin-bottom: -10.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .about-desc {
+    background: #f4f8fc;
+    text-align: left;
+    padding: 1rem;
+    padding-right: 0.5rem;
+    height: 250px;
+    width: 46%;
+    position: absolute;
+  }
+  .about-desc .about-heading {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-desc .about-text {
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-top: 0.5rem;
+  }
+  .about-img {
+    width: 400px;
+    margin-top: 0.8rem;
+    position: relative;
+  }
+  .left .about-desc {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .left .about-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    right: 0;
+    margin-left: auto;
+  }
+  .right .about-desc {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    right: 0;
+  }
+  .right .about-img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    left: 0;
+    margin-right: auto;
+  }
+  #director .md-title {
+    color: #588b8b;
+  }
+  .team-text {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .member-profile {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    padding: 2rem;
+    display: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    background: radial-gradient(closest-side, rgba(253, 143, 10, 0.5), rgba(253, 143, 10, 0.2), rgba(253, 143, 10, 0.56), rgba(253, 143, 10, 0.2));
+  }
+  .member-profile:hover {
+    display: -ms-grid;
+    display: grid;
+  }
+  .member-profile:hover .member-name,
+  .member-profile:hover .member-title {
+    display: none;
+  }
+  .member-profile a {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .member-profile a:hover {
+    text-decoration: none;
+  }
+  .member {
+    position: relative;
+    overflow: hidden;
+  }
+  .member-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 1rem;
+    color: #ffffff;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .member-overlay:hover .member-name,
+  .member-overlay:hover .member-title {
+    display: none;
+  }
+  .member-overlay:hover ~ .member-profile {
+    display: -ms-grid;
+    display: grid;
+  }
+  .member-overlay .member-name {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+  .member-overlay .member-title {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #company .col-md-4 {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .about-hero-heading {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  .about-hero-text {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .about-desc {
+    background: #f4f8fc;
+    text-align: left;
+    padding: 1.5rem 1rem 1.5rem 3rem;
+    height: 300px;
+    width: 50%;
+    position: absolute;
+  }
+  .about-desc .about-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-desc .about-text {
+    font-size: 0.9rem;
+    line-height: 26px;
+    margin-top: 0.5rem;
+  }
+  .about-img {
+    width: 53.5%;
+    margin-top: 0.8rem;
+    position: relative;
+  }
+  .md-img {
+    width: 450px;
+  }
+  .md-title {
+    font-size: 2rem;
+    width: 70%;
+  }
+  .md-speech {
+    font-size: 1.125rem;
+  }
+  .md-quote,
+  .md-speech {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-hero-heading {
+    font-size: 3rem;
+    margin-bottom: 2.125rem;
+  }
+  .about-hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .about {
+    margin-top: 7rem;
+  }
+  .about-desc {
+    background: #f4f8fc;
+    height: 400px;
+    padding: 3rem 1rem 1.5rem 4rem;
+  }
+  .about-desc .about-heading {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .about-desc .about-text {
+    font-size: 1rem;
+    line-height: 26px;
+    width: 80%;
+  }
 }

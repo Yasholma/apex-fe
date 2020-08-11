@@ -578,7 +578,8 @@ ul {
   background: $secondaryColor;
   color: $whiteColor;
 
-  .footer-link {
+  .footer-link,
+  .hr-link {
     color: $whiteColor;
   }
 
@@ -913,21 +914,28 @@ ul {
     padding: 6rem 0 5rem;
   }
 
+  .trade-content {
+    margin-left: 0rem;
+  }
+
   .trade-heading {
     font-size: 2.5rem;
     width: 205%;
     margin-left: 0;
+    padding-left: 2rem;
   }
 
   .trade-text {
     font-size: 1.2rem;
     width: 96%;
     margin-bottom: 2rem;
+    padding-left: 2rem;
   }
 
   .trade-guide-item {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    padding-left: 2rem;
     svg {
       width: 15px;
       margin-right: 0.8rem;
