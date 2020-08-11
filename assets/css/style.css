@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root,
 * {
   margin: 0;
@@ -122,7 +122,7 @@ ul {
   border-color: #fd8f0a;
   font-size: 0.8rem;
   border-radius: 0.3125rem;
-  padding: 0.75rem 2.8rem;
+  padding: 1.2rem 3.3rem;
 }
 
 .btn-primary:hover {
@@ -257,6 +257,17 @@ ul {
   position: relative;
   color: #464855;
   padding: 0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.guide-card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.guide-card:hover .watermark p {
+  color: #fd8f0a;
 }
 
 .watermark {
@@ -604,6 +615,68 @@ ul {
   }
 }
 
+#header.bg-second .navbar {
+  background: #588b8b;
+  color: #ffffff;
+}
+
+#header.bg-second .bar,
+#header.bg-second .bar::after,
+#header.bg-second .bar::before {
+  background: #ffffff;
+}
+
+#header.bg-second .navbar-toggler[aria-expanded='true'] .bar {
+  background: transparent;
+}
+
+#header.bg-second .nav-link {
+  color: #ffffff;
+}
+
+#header.bg-second .nav-link:hover {
+  color: #fd8f0a;
+}
+
+#header.bg-second .btn-get-started {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+#header.bg-second .btn-get-started:hover {
+  background: #fd8f0a;
+  border-color: #fd8f0a;
+}
+
+#footer.bg-second {
+  background: #588b8b;
+  color: #ffffff;
+}
+
+#footer.bg-second .footer-link {
+  color: #ffffff;
+}
+
+#footer.bg-second .copyright-hr {
+  border-color: #ffffff;
+}
+
+#footer.bg-second .custom-btn {
+  background: #fd8f0a;
+}
+
+#footer.bg-second .custom-btn:hover {
+  background: transparent;
+  border: 1px solid #fd8f0a;
+  color: #464855;
+}
+
+#footer.bg-second .social-icon {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
 @media screen and (min-width: 768px) {
   .arrow-up-mobile,
   .download-text.mobile,
@@ -611,12 +684,18 @@ ul {
   .mobile {
     display: none;
   }
+  .logo {
+    width: 87px;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 1.5rem 5rem;
+  }
   #hero {
-    height: 100%;
     padding-bottom: 0;
-    padding-top: 30vh;
-    padding-bottom: 3vh;
-    height: 100vh;
+    padding-top: 25vh;
+    padding-bottom: 10rem;
+    height: calc(100vh - 12vh);
   }
   .hero-img {
     position: absolute;
@@ -624,7 +703,7 @@ ul {
             transform: rotate(0);
     bottom: 0.5rem;
     right: 0;
-    top: 5.375rem;
+    top: 7.375rem;
     width: 50%;
     margin-top: 0;
   }
@@ -639,14 +718,14 @@ ul {
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     -webkit-animation: bounce 1s infinite ease-in-out;
             animation: bounce 1s infinite ease-in-out;
   }
   .arrow-down img {
-    width: 40px;
-    margin-left: -20px;
+    width: 80px;
+    margin-left: -25px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .download-text,
   .download-icons {
@@ -727,9 +806,15 @@ ul {
   }
   .partners {
     padding: 5rem 0 4rem;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .partners .partner {
+    width: 90px;
   }
   #join {
-    max-width: 60%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -792,6 +877,12 @@ ul {
 }
 
 @media screen and (min-width: 991px) {
+  .container {
+    max-width: calc(1440px - 180px);
+  }
+  #header .container {
+    max-width: calc(1440px - 50px) !important;
+  }
   .nav-item {
     margin-bottom: 0;
     margin-left: 0;
@@ -799,6 +890,13 @@ ul {
   }
   .nav-item.button {
     margin-right: 0;
+  }
+  .hero-content {
+    margin-left: 1.8rem;
+  }
+  .download-content,
+  .trade-content {
+    margin-left: 3rem;
   }
   .hero-heading {
     font-size: 2.5rem;
@@ -911,10 +1009,18 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: calc(1440px - 86px);
+  }
+  .hero-content,
+  .download-content,
+  .trade-content {
+    margin-left: 0;
+  }
   .nav-item {
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 1.5rem;
+    margin-right: 3.125rem;
   }
   .nav-link {
     font-size: 18px;
@@ -928,13 +1034,123 @@ ul {
     padding: 0.5rem 1.3rem;
   }
   .hero-heading {
-    font-size: 3.2rem;
+    font-size: 3.875rem;
     width: 125%;
   }
   .hero-text {
     font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 38px;
   }
   .hero-img {
-    width: 43%;
+    width: 46%;
+  }
+  .download-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .download-text {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+  }
+  .download-icons a img {
+    width: 18.375rem;
+  }
+  .download-img svg {
+    width: 80%;
+    margin: 0 0;
+  }
+  .guide-heading {
+    margin-top: 8rem;
+  }
+  .guide-top-heading,
+  .guide-heading {
+    font-size: 2.5rem;
+  }
+  .watermark {
+    position: absolute;
+    top: -4rem;
+    right: 2rem;
+  }
+  .watermark p {
+    font-size: 15rem;
+  }
+  .guide-card {
+    width: 593px;
+    height: 453px;
+  }
+  .guide-text {
+    font-size: 1.25rem;
+    line-height: 32px;
+    width: 70%;
+  }
+  .guide-bottom-text {
+    font-size: 2.25rem;
+  }
+  .learn-more {
+    font-size: 1.5rem;
+  }
+  #trade {
+    padding: 9rem 0;
+  }
+  .trade-heading {
+    font-size: 3rem;
+  }
+  .trade-text {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .trade-guide-item {
+    font-size: 2rem;
+  }
+  .trade-guide-item svg {
+    width: 26px;
+    margin-right: 0.8rem;
+  }
+  .trade-img {
+    width: 499px;
+  }
+  .trade-money {
+    margin-top: -8rem;
+    width: 700px;
+    margin-right: -5rem;
+    position: absolute;
+    right: 0;
+  }
+  .app-heading {
+    font-size: 3rem;
+    line-height: 56px;
+  }
+  .partners {
+    width: 800px;
+    padding: 6.5rem 0 6rem;
+  }
+  .partners .partner {
+    width: 126px;
+  }
+  #join {
+    margin-bottom: 6rem;
+  }
+  .join-heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .join-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #hero {
+    padding-bottom: 0;
+    padding-top: 25vh;
+    padding-bottom: 10rem;
+    height: calc(100vh - 0.5vh);
+  }
+  #join {
+    width: 800px;
   }
 }
