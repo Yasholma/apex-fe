@@ -97,5 +97,204 @@ ul {
 }
 
 .md-info .md-img {
-  width: 160px;
+  width: 150px;
+}
+
+.md-desc {
+  margin-top: 1.5rem;
+}
+
+.md-desc .md-quote {
+  color: rgba(70, 72, 85, 0.5);
+}
+
+.md-desc .read-more-link {
+  color: #fd8f0a;
+  text-decoration: underline;
+}
+
+.md-desc .read-more-link:hover {
+  color: #588b8b;
+}
+
+#team {
+  margin: 4rem 0 3rem;
+}
+
+#team .team-heading {
+  color: #588b8b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#team .team-text {
+  font-size: 0.9rem;
+  line-height: 26px;
+}
+
+.carousel-item {
+  position: relative;
+  height: 280px;
+}
+
+.carousel-item .member-profile {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 2rem;
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: radial-gradient(closest-side, rgba(253, 143, 10, 0.5), rgba(253, 143, 10, 0.2), rgba(253, 143, 10, 0.56), rgba(253, 143, 10, 0.2));
+}
+
+.carousel-item .member-profile:hover {
+  display: -ms-grid;
+  display: grid;
+}
+
+.carousel-item .member-profile:hover .member-name,
+.carousel-item .member-profile:hover .member-title {
+  display: none;
+}
+
+.carousel-item .member-profile a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.carousel-item .member-profile a:hover {
+  text-decoration: none;
+}
+
+.carousel-item .member-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1rem;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.carousel-item .member-overlay:hover .member-name,
+.carousel-item .member-overlay:hover .member-title {
+  display: none;
+}
+
+.carousel-item .member-overlay:hover ~ .member-profile {
+  display: -ms-grid;
+  display: grid;
+}
+
+.carousel-item .member-overlay .member-name {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.carousel-item .member-overlay .member-title {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/icons/carousel-right.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/icons/carousel-right.svg");
+}
+
+.company-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.company-section.co-set {
+  margin-top: -2rem;
+}
+
+.company-section.co-set .co-desc {
+  margin-left: 1rem;
+  margin-top: 2.8rem;
+}
+
+.company-section .co-img {
+  margin-right: 1rem;
+  width: 28px;
+}
+
+.company-section .co-details {
+  margin-top: 2.2rem;
+}
+
+.company-section .co-details .co-title {
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.company-section .co-details .co-date {
+  margin: 0;
+  font-size: 18px;
+}
+
+.co-desc {
+  font-size: 0.8rem;
+}
+
+#reach {
+  margin: 2rem 0;
+}
+
+.reach-heading {
+  color: #588b8b;
+  font-size: 1.2rem;
+}
+
+.reach-text {
+  font-size: 0.9rem;
+  line-height: 36px;
+}
+
+.reach-text a {
+  color: #0077ff;
+}
+
+#network-footer {
+  width: 100%;
+  margin-bottom: -10.3rem;
 }
