@@ -1008,7 +1008,146 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: calc(1440px - 86px);
+  }
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 2.125rem;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .nav-item.button {
+    margin-right: 0;
+  }
+  .btn-get-started {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    padding: 0.5rem 1.3rem;
+  }
+  #hero {
+    height: 100vh;
+  }
+  .hero-heading {
+    font-size: 2.875rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .hero-img {
+    width: 40%;
+  }
+  .download-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .download-text {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+  }
+  .download-icons a img {
+    width: 15.375rem;
+  }
+  .download-img svg {
+    width: 80%;
+    margin: 0 0;
+  }
+  .guide-heading {
+    margin-top: 8rem;
+  }
+  .guide-top-heading,
+  .guide-heading {
+    font-size: 2.5rem;
+  }
+  .watermark {
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+  }
+  .watermark p {
+    font-size: 10rem;
+  }
+  .guide-card {
+    width: 500px;
+    height: 450px;
+  }
+  .guide-text {
+    font-size: 1rem;
+    line-height: 32px;
+    width: 70%;
+  }
+  .guide-bottom-text {
+    font-size: 2.25rem;
+  }
+  .learn-more {
+    font-size: 1.5rem;
+  }
+  #trade {
+    padding: 9rem 0;
+  }
+  .trade-heading {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+  .trade-text {
+    font-size: 1.3rem;
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .trade-guide-item {
+    font-size: 1.3rem;
+    padding-left: 2rem;
+  }
+  .trade-guide-item svg {
+    width: 20px;
+    margin-right: 0.8rem;
+  }
+  .trade-img {
+    width: 100%;
+  }
+  .trade-content {
+    margin-left: 0rem;
+  }
+  .trade-money {
+    margin-top: 0rem;
+    width: 100%;
+    margin-right: -2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .app-heading {
+    font-size: 2.5rem;
+    line-height: 56px;
+  }
+  .partners {
+    width: 800px;
+    padding: 6.5rem 0 6rem;
+  }
+  .partners .partner {
+    width: 126px;
+  }
+  #join {
+    margin-bottom: 6rem;
+  }
+  .join-heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .join-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .container {
     max-width: calc(1440px - 86px);
   }
@@ -1152,5 +1291,9 @@ ul {
   }
   #join {
     width: 800px;
+  }
+  .trade-money {
+    margin-left: auto;
+    margin-right: -19rem;
   }
 }
