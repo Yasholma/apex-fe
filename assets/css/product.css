@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #464855;
+  font-size: 1rem;
+}
+
+a {
+  color: #464855;
+}
+
+a:hover {
+  color: #fd8f0a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.desktop {
+  display: none;
+}
+
+#product-hero {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.product {
+  margin-bottom: 6rem;
+}
+
+.product-content {
+  text-align: center;
+}
+
+.product-heading {
+  font-size: 2rem;
+  color: #588b8b;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-text {
+  font-size: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-product {
+  background: #fd8f0a;
+  color: #ffffff;
+  padding: 0.4rem 3.375rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+
+.btn-product:hover {
+  background: transparent;
+  border-color: #fd8f0a;
+}
+
+#network-footer {
+  width: 100%;
+  margin-bottom: -10.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  #product-hero {
+    margin-top: -8rem;
+  }
+  .product-hero-img {
+    -webkit-transform: rotate(180deg) scaleX(-1);
+            transform: rotate(180deg) scaleX(-1);
+  }
+  .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product-content {
+    text-align: left;
+  }
+  .product-heading {
+    width: 100%;
+  }
+  .product {
+    margin-bottom: 8rem;
+  }
+  .product-img {
+    width: 500px;
+    margin-top: 3rem;
+  }
+  #giftcard .image-con {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .product-img {
+    width: 100%;
+  }
+  .product-heading {
+    font-size: 2.25rem;
+  }
+  .product-desc {
+    font-size: 1rem;
+    line-height: 26px;
+    width: 70%;
+  }
+}

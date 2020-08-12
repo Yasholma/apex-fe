@@ -131,6 +131,11 @@ ul {
   color: #fd8f0a;
 }
 
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 #hero {
   height: auto;
   position: relative;
@@ -878,9 +883,6 @@ ul {
 }
 
 @media screen and (min-width: 991px) {
-  .container {
-    max-width: calc(1440px - 180px);
-  }
   #header .container {
     max-width: calc(1440px - 50px) !important;
   }
@@ -1016,9 +1018,6 @@ ul {
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .container {
-    max-width: calc(1440px - 86px);
-  }
   .nav-item {
     margin-bottom: 0;
     margin-left: 0;
