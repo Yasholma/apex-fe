@@ -1,0 +1,206 @@
+@import './variables';
+@import './mixin';
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 1rem;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+#terms {
+  margin-top: 8rem;
+}
+
+.terms-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 30px;
+
+  span {
+    display: block;
+  }
+}
+
+.terms-text {
+  font-size: 1rem;
+}
+
+.terms {
+  .nav-item {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .nav-pills .nav-link {
+    background-color: transparent;
+    color: $textColor;
+    border-radius: none;
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+
+  .nav-pills .nav-link {
+    border-radius: 0;
+    font-size: 0.9rem;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: $primaryColor;
+    background: transparent;
+    border-bottom: 4px solid $primaryColor;
+  }
+
+  .nav-link:hover {
+    color: $primaryColor;
+  }
+
+  .policy {
+    .nav-link {
+      padding-right: 0;
+      padding-left: 2rem;
+    }
+  }
+
+  .tab-content {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  width: 90%;
+  margin: auto;
+}
+
+.content-date {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.content-heading {
+  color: $primaryColor;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.content-text {
+  font-size: 0.9rem;
+  line-height: 26px;
+}
+
+#network-footer {
+  width: 100%;
+  margin-bottom: -10.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .terms-heading {
+    span {
+      display: inline;
+    }
+  }
+
+  .nav {
+    width: 60%;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 1rem;
+    padding-right: 5rem !important;
+  }
+
+  .policy {
+    .nav-link {
+      padding-right: 0 !important;
+      padding-left: 5rem !important;
+    }
+  }
+
+  .tab-content {
+    margin-bottom: 8rem !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .terms-heading {
+    span {
+      display: inline;
+    }
+  }
+
+  .nav {
+    width: 40%;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 1.5rem !important;
+    padding-right: 3rem !important;
+  }
+
+  .policy {
+    .nav-link {
+      padding-right: 0 !important;
+      padding-left: 1rem !important;
+      width: 100%;
+      margin-left: 3rem;
+      text-align: right;
+    }
+  }
+
+  .tab-content {
+    width: 90%;
+    margin-left: 5rem !important;
+    margin-top: 4rem;
+  }
+
+  .content-date {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .content-heading {
+    font-size: 1.625rem;
+    color: $primaryColor;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .content-text {
+    font-size: 1.25rem;
+    line-height: 26px;
+  }
+}

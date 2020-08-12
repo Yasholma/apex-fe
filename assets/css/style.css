@@ -363,7 +363,7 @@ ul {
 .trade-money {
   margin-top: -1rem;
   width: 280px;
-  padding-right: 2.3rem;
+  padding-right: 1.5rem;
 }
 
 #app {
@@ -596,8 +596,8 @@ ul {
             transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   100% {
     -webkit-transform: translateY(-5px);
@@ -611,8 +611,8 @@ ul {
             transform: translateY(-5px);
   }
   50% {
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
   100% {
     -webkit-transform: translateY(-5px);
@@ -722,7 +722,7 @@ ul {
   .arrow-down {
     display: block;
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 2rem;
     left: 50%;
     -webkit-animation: bounce 1s infinite ease-in-out;
             animation: bounce 1s infinite ease-in-out;
@@ -779,6 +779,10 @@ ul {
     margin-right: initial;
     width: 300px;
     margin-left: 1.3rem;
+  }
+  .trade-money {
+    padding-right: 0rem;
+    width: 310px;
   }
   #app {
     padding: 5rem 0 0;
@@ -883,6 +887,9 @@ ul {
 }
 
 @media screen and (min-width: 991px) {
+  .container {
+    max-width: 90%;
+  }
   #header .container {
     max-width: calc(1440px - 50px) !important;
   }
@@ -991,7 +998,7 @@ ul {
   }
   .trade-money {
     margin-top: -1rem;
-    width: 450px;
+    width: 500px;
     padding-right: 1rem;
   }
   #app {
@@ -1120,9 +1127,9 @@ ul {
     margin-left: 0rem;
   }
   .trade-money {
-    margin-top: 0rem;
-    width: 100%;
-    margin-right: -2rem;
+    margin-top: -5rem;
+    width: 600px;
+    margin-right: -6rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -1301,5 +1308,20 @@ ul {
   .trade-money {
     margin-left: auto;
     margin-right: -19rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .download-icons .apple {
+    margin-right: 0.4rem;
+  }
+  .guide-card {
+    min-height: 320px;
+  }
+  .app-img {
+    width: 140px;
+  }
+  .app-download {
+    margin-left: -0.7rem;
   }
 }
