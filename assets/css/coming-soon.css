@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #464855;
+  font-size: 1rem;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../images/comming-soon-mobile.svg") #588b8b;
+  width: 100vw;
+}
+
+a {
+  color: #464855;
+}
+
+a:hover {
+  color: #fd8f0a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar {
+  background: transparent;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+#coming-soon {
+  width: 100vw;
+  height: 100%;
+}
+
+#coming-soon .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  color: #ffffff;
+}
+
+#coming-soon .coming-soon-heading {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+#coming-soon .coming-soon-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 1.5rem;
+}
+
+#coming-soon .custom-btn {
+  background: #fd8f0a;
+}
+
+#coming-soon .social-icons {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#coming-soon .social-icons li {
+  margin: 0;
+  padding: 0;
+}
+
+#coming-soon .social-icons li .social-icon {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+@media screen and (min-width: 768px) {
+  .coming-soon-content {
+    width: 500px;
+    margin-left: 4rem;
+    z-index: 4;
+  }
+  .coming-soon-heading {
+    font-size: 2rem;
+  }
+  .coming-soon-text {
+    font-size: 2.3rem;
+  }
+  form {
+    width: 300px;
+    z-index: 2;
+  }
+  .social-icons {
+    left: unset;
+    bottom: unset;
+    right: 0;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+    width: 100%;
+    padding-right: 2rem;
+  }
+  .social-icons li {
+    margin: 1rem 0 !important;
+  }
+}

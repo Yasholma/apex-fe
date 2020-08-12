@@ -1,0 +1,133 @@
+@import './variables';
+@import './mixin';
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 1rem;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../images/comming-soon-mobile.svg') $secondaryColor;
+  width: 100vw;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.navbar {
+  background: transparent;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+#coming-soon {
+  width: 100vw;
+  height: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    color: $whiteColor;
+  }
+
+  .coming-soon-heading {
+    font-size: 1.3rem;
+    color: $whiteColor;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .coming-soon-text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 1.5rem;
+  }
+
+  .custom-btn {
+    background: $primaryColor;
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      .social-icon {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+          brightness(102%) contrast(102%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .coming-soon-content {
+    width: 500px;
+    margin-left: 4rem;
+    z-index: 4;
+  }
+
+  .coming-soon-heading {
+    font-size: 2rem;
+  }
+
+  .coming-soon-text {
+    font-size: 2.3rem;
+  }
+
+  form {
+    width: 300px;
+    z-index: 2;
+  }
+
+  .social-icons {
+    left: unset;
+    bottom: unset;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: auto;
+    width: 100%;
+    padding-right: 2rem;
+
+    li {
+      margin: 1rem 0 !important;
+    }
+  }
+}
