@@ -138,3 +138,21 @@ ul {
     margin: 1rem 0 !important;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .coming-soon-content {
+    width: 600px;
+  }
+  .coming-soon-heading {
+    font-size: 2rem !important;
+  }
+  .coming-soon-text {
+    font-size: 2.375rem !important;
+    width: 100%;
+    line-height: 50px !important;
+    font-weight: 300 !important;
+  }
+  form {
+    width: 500px;
+  }
+}

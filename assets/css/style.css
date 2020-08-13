@@ -175,6 +175,7 @@ ul {
   right: 0;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  display: none;
 }
 
 .arrow-up-mobile:hover {
@@ -466,11 +467,6 @@ ul {
   padding: 1rem 0;
 }
 
-#footer .col-md-2,
-#footer .col-2 {
-  padding-right: 0;
-}
-
 .footer-heading {
   font-weight: 600;
   font-size: 0.9rem;
@@ -557,10 +553,16 @@ ul {
   margin: 0 auto 2rem;
 }
 
+.social-icons a {
+  display: inline-block;
+  padding: 0.5rem;
+}
+
 .social-icons .social-icon {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   display: block;
+  cursor: pointer;
 }
 
 .social-icons .social-icon:hover {
@@ -1048,13 +1050,20 @@ ul {
     margin-top: 0.2rem;
     padding: 0.5rem 1.3rem;
   }
+  .hero-content {
+    margin-top: -2rem;
+  }
   .hero-heading {
-    font-size: 2.875rem;
+    font-size: 3.3rem;
   }
   .hero-text {
     font-size: 1rem;
     font-weight: 500;
+    width: 60%;
     line-height: 25px;
+  }
+  .desktop-hero-img {
+    width: 560px;
   }
   .download-heading {
     font-size: 2.5rem;
@@ -1265,7 +1274,7 @@ ul {
     width: 100%;
   }
   .trade-guide-item {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .trade-guide-item svg {
     width: 26px;
@@ -1305,6 +1314,12 @@ ul {
   .join-text {
     font-size: 1.125rem;
   }
+  .footer-text {
+    width: 80%;
+  }
+  .custom-input {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1314,6 +1329,19 @@ ul {
   .trade-money {
     margin-left: auto;
     margin-right: -5rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .hero-content {
+    margin-left: 15rem;
+  }
+  .desktop-hero-img {
+    width: 120%;
+  }
+  .trade-money {
+    width: 800px;
+    margin-right: -19.5rem;
   }
 }
 
