@@ -1,5 +1,6 @@
 @import './variables';
 @import './mixin';
+@import './animation';
 
 :root,
 * {
@@ -126,14 +127,7 @@ ul {
   position: relative;
   background: $bgColor;
   padding-top: 6.4rem;
-}
-
-.hero-img {
-  position: relative;
-  transform: rotate(90deg);
-  bottom: 0.5rem;
-  width: 100%;
-  margin-top: 2rem;
+  padding-bottom: 0;
 }
 
 .hero-heading {
@@ -147,6 +141,18 @@ ul {
   font-weight: 500;
   width: 88%;
   margin: 0 auto 1rem;
+}
+
+.hero-img {
+  position: relative;
+  transform: rotate(90deg);
+  width: 100%;
+  bottom: 0.5rem;
+  margin: -4rem 0 -7rem;
+
+  svg {
+    width: 100%;
+  }
 }
 
 .arrow-down {
@@ -1387,6 +1393,17 @@ ul {
 }
 
 @media screen and (max-width: 425px) {
+  .hero-img {
+    position: relative;
+    transform: rotate(90deg);
+    width: 100%;
+    bottom: 0.5rem;
+    margin: -3rem 0 -6rem;
+
+    svg {
+      width: 100%;
+    }
+  }
   .download-icons {
     .apple {
       margin-right: 0.4rem;
@@ -1403,5 +1420,17 @@ ul {
 
   .app-download {
     margin-left: -0.7rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-img {
+    margin: -5rem 0 -8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-img {
+    margin: -5rem 0 -9rem;
   }
 }
