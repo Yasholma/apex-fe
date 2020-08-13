@@ -626,39 +626,50 @@ ul {
     padding: 1.5rem 5rem;
   }
 
-  #hero {
-    padding-bottom: 0;
-    padding-top: 25vh;
-    padding-bottom: 10rem;
-    height: calc(100vh - 12vh);
-  }
-  .hero-img {
-    position: absolute;
-    transform: rotate(0);
-    bottom: 0.5rem;
-    right: 0;
-    top: 7.375rem;
-    width: 50%;
-    margin-top: 0;
+  #header {
+    .container {
+      width: 100%;
+    }
   }
 
-  .hero-content,
-  .hero-text {
-    text-align: left !important;
+  #hero {
+    height: auto;
+    padding: 0;
     width: 100%;
-    vertical-align: middle;
+  }
+
+  .hero-content-wrapper.desktop {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .hero-text {
+    margin-left: 0;
+  }
+
+  .hero-content {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    padding-left: 2rem;
+  }
+
+  .desktop-hero-img {
+    width: 400px;
   }
 
   .arrow-down {
     display: block;
     position: absolute;
-    bottom: 2rem;
-    left: 50%;
+    bottom: 1rem;
+    width: 100%;
+    left: 0;
     animation: bounce 1s infinite ease-in-out;
     img {
-      width: 80px;
-      margin-left: -25px;
-      transform: translateX(-50%);
+      width: 50px;
     }
   }
 
@@ -844,12 +855,7 @@ ul {
   }
 
   .hero-content {
-    margin-left: 1.8rem;
-  }
-
-  .download-content,
-  .trade-content {
-    margin-left: 3rem;
+    margin-left: 0.8rem;
   }
 
   .hero-heading {
@@ -858,13 +864,18 @@ ul {
 
   .hero-text {
     font-size: 1rem;
-    width: 90%;
+    width: 80%;
     margin-right: auto;
     margin-left: 0;
   }
 
-  .hero-img {
-    width: 45%;
+  .desktop-hero-img {
+    width: 450px;
+  }
+
+  .download-content,
+  .trade-content {
+    margin-left: 3rem;
   }
 
   #download {
@@ -1008,10 +1019,6 @@ ul {
     padding: 0.5rem 1.3rem;
   }
 
-  #hero {
-    height: 100vh;
-  }
-
   .hero-heading {
     font-size: 2.875rem;
   }
@@ -1020,10 +1027,6 @@ ul {
     font-size: 1rem;
     font-weight: 500;
     line-height: 25px;
-  }
-
-  .hero-img {
-    width: 40%;
   }
 
   // Download
@@ -1162,12 +1165,6 @@ ul {
     max-width: calc(1440px - 86px);
   }
 
-  .hero-content,
-  .download-content,
-  .trade-content {
-    margin-left: 0;
-  }
-
   .nav-item {
     margin-bottom: 0;
     margin-left: 0;
@@ -1188,6 +1185,17 @@ ul {
     padding: 0.5rem 1.3rem;
   }
 
+  .hero-content,
+  .download-content,
+  .trade-content {
+    margin-left: 0;
+  }
+
+  .hero-content {
+    margin-left: 1rem;
+    padding-top: -2rem;
+  }
+
   .hero-heading {
     font-size: 3.875rem;
     width: 125%;
@@ -1197,10 +1205,18 @@ ul {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 38px;
+    width: 60%;
   }
 
-  .hero-img {
-    width: 46%;
+  .desktop-hero-img {
+    width: 100%;
+  }
+
+  .arrow-down {
+    bottom: 2rem;
+    img {
+      width: 80px;
+    }
   }
 
   // Download
@@ -1327,13 +1343,6 @@ ul {
 }
 
 @media screen and (min-width: 1440px) {
-  #hero {
-    padding-bottom: 0;
-    padding-top: 25vh;
-    padding-bottom: 10rem;
-    height: calc(100vh - 0.5vh);
-  }
-
   #join {
     width: 800px;
   }
