@@ -616,7 +616,6 @@ ul {
 }
 
 // Responsiveness (Media Query)
-
 @media screen and (min-width: 768px) {
   .arrow-up-mobile,
   .download-text.mobile,
@@ -663,16 +662,21 @@ ul {
     width: 100%;
     padding: 0;
     padding-left: 2rem;
+    margin-top: -5rem;
   }
 
   .desktop-hero-img {
-    width: 400px;
+    width: 120%;
+    margin-top: -5rem;
+    svg {
+      width: 100%;
+    }
   }
 
   .arrow-down {
     display: block;
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
     left: 0;
     animation: bounce 1s infinite ease-in-out;
@@ -877,7 +881,11 @@ ul {
   }
 
   .desktop-hero-img {
-    width: 450px;
+    width: 110%;
+    margin-top: -5rem;
+    svg {
+      width: 100%;
+    }
   }
 
   .download-content,
@@ -1042,7 +1050,12 @@ ul {
   }
 
   .desktop-hero-img {
-    width: 560px;
+    width: 130%;
+    margin-top: -5rem;
+    margin-right: -5rem;
+    svg {
+      width: 100%;
+    }
   }
 
   // Download
@@ -1225,7 +1238,12 @@ ul {
   }
 
   .desktop-hero-img {
-    width: 100%;
+    width: 130%;
+    margin-top: -5rem;
+    margin-right: -5rem;
+    svg {
+      width: 100%;
+    }
   }
 
   .arrow-down {
@@ -1277,6 +1295,7 @@ ul {
   .guide-card {
     width: 593px;
     height: 453px;
+    padding-left: 1.875rem;
   }
 
   .guide-text {
@@ -1383,7 +1402,35 @@ ul {
   }
 
   .desktop-hero-img {
-    width: 120%;
+    width: 150%;
+    margin-top: -5rem;
+    margin-right: 10rem;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .trade-money {
+    width: 800px;
+    margin-right: -19.5rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero-content {
+    margin-left: 23.5%;
+    width: 100%;
+  }
+
+  .desktop-hero-img {
+    width: 150%;
+    margin-top: -5rem;
+    margin-right: 20%;
+
+    svg {
+      width: 100%;
+    }
   }
 
   .trade-money {
