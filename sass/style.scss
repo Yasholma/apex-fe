@@ -336,8 +336,8 @@ ul {
 
 .trade-money {
   margin-top: -1rem;
-  width: 280px;
-  padding-right: 1.5rem;
+  width: 180px;
+  margin-left: 1.5rem;
 }
 
 // *** App Section ***
@@ -982,9 +982,10 @@ ul {
   }
 
   .trade-money {
-    margin-top: -1rem;
-    width: 500px;
-    padding-right: 1rem;
+    margin-top: 0;
+    width: 400px;
+    margin-right: -3rem;
+    padding-right: 0;
   }
 
   #app {
@@ -1150,12 +1151,8 @@ ul {
   }
 
   .trade-money {
-    margin-top: -5rem;
-    width: 600px;
-    margin-right: -6rem;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 500px;
+    margin-top: -2rem;
   }
 
   // App
@@ -1337,13 +1334,13 @@ ul {
   .trade-img {
     width: 499px;
   }
-
   .trade-money {
-    margin-top: -8rem;
-    width: 700px;
-    margin-right: -5rem;
-    position: absolute;
-    right: 0;
+    margin-top: 0;
+    width: 500px;
+    margin-right: 0;
+    padding-right: 0;
+    height: auto;
+    display: block;
   }
 
   // App
@@ -1412,7 +1409,7 @@ ul {
   }
 
   .trade-money {
-    width: 800px;
+    width: 400px;
     margin-right: -19.5rem;
   }
 }
@@ -1434,8 +1431,8 @@ ul {
   }
 
   .trade-money {
-    width: 800px;
-    margin-right: -19.5rem;
+    width: 700px;
+    margin-right: -23.5rem;
   }
 }
 
@@ -1467,6 +1464,11 @@ ul {
 
   .app-download {
     margin-left: -0.7rem;
+  }
+
+  .trade-money {
+    width: 220px;
+    margin-right: 0;
   }
 }
 
