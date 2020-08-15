@@ -90,6 +90,10 @@ ul {
 
 .nav-link {
   font-size: 0.9rem;
+
+  &.active {
+    color: $primaryColor;
+  }
 }
 
 .btn-get-started {
@@ -247,7 +251,7 @@ ul {
   position: relative;
   color: $textColor;
   padding: 0.5rem;
-  transition: 0.3s ease;
+  transition: all 0.8s ease;
 
   &:hover {
     transform: scale(1.01);
@@ -444,6 +448,11 @@ ul {
 
 .footer-special {
   font-weight: normal;
+
+  &:hover {
+    text-decoration: none;
+    color: $textColor;
+  }
 }
 
 .custom-input {
@@ -568,6 +577,10 @@ ul {
   .nav-link {
     color: $whiteColor;
 
+    &.active {
+      color: $primaryColor;
+    }
+
     &:hover {
       color: $primaryColor;
     }
@@ -616,6 +629,14 @@ ul {
 }
 
 // Responsiveness (Media Query)
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .trade-money {
+    width: 130%;
+    margin-right: -5.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .arrow-up-mobile,
   .download-text.mobile,
@@ -739,9 +760,15 @@ ul {
     margin-left: 1.3rem;
   }
 
+  .trade-img {
+    width: 250px;
+  }
+
   .trade-money {
-    padding-right: 0rem;
-    width: 310px;
+    width: 320px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 5rem;
   }
 
   // App
@@ -841,6 +868,15 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .trade-money {
+    width: 332px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6.5rem;
   }
 }
 
@@ -978,14 +1014,14 @@ ul {
   }
 
   .trade-img {
-    width: 400px;
+    width: 350px;
   }
 
   .trade-money {
-    margin-top: 0;
     width: 400px;
-    margin-right: -3rem;
-    padding-right: 0;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6rem;
   }
 
   #app {
@@ -1151,8 +1187,10 @@ ul {
   }
 
   .trade-money {
-    width: 500px;
-    margin-top: -2rem;
+    width: 470px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6rem;
   }
 
   // App
@@ -1332,15 +1370,14 @@ ul {
   }
 
   .trade-img {
-    width: 499px;
+    width: 408px;
   }
+
   .trade-money {
-    margin-top: 0;
-    width: 500px;
-    margin-right: 0;
-    padding-right: 0;
+    width: 576px;
     height: auto;
-    display: block;
+    margin-right: 0;
+    margin-left: 3rem;
   }
 
   // App
@@ -1386,10 +1423,32 @@ ul {
   #join {
     width: 800px;
   }
+}
 
+@media screen and (min-width: 1500px) {
   .trade-money {
-    margin-left: auto;
-    margin-right: -5rem;
+    width: 612px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .trade-money {
+    width: 657px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 12rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .trade-money {
+    width: 730px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 20rem;
   }
 }
 
@@ -1406,11 +1465,6 @@ ul {
     svg {
       width: 100%;
     }
-  }
-
-  .trade-money {
-    width: 400px;
-    margin-right: -19.5rem;
   }
 }
 
@@ -1431,8 +1485,10 @@ ul {
   }
 
   .trade-money {
-    width: 700px;
-    margin-right: -23.5rem;
+    width: 767px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 25rem;
   }
 }
 
@@ -1491,5 +1547,9 @@ ul {
     svg {
       width: 80%;
     }
+  }
+
+  .trade-money {
+    width: 100%;
   }
 }

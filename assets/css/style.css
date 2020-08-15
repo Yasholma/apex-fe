@@ -2245,6 +2245,10 @@ ul {
   font-size: 0.9rem;
 }
 
+.nav-link.active {
+  color: #fd8f0a;
+}
+
 .btn-get-started {
   font-size: 0.8rem;
   background: #ffffff;
@@ -2408,8 +2412,8 @@ ul {
   position: relative;
   color: #464855;
   padding: 0.5rem;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .guide-card:hover {
@@ -2634,6 +2638,11 @@ ul {
   font-weight: normal;
 }
 
+.footer-special:hover {
+  text-decoration: none;
+  color: #464855;
+}
+
 .custom-input {
   position: relative;
   width: 80%;
@@ -2786,6 +2795,10 @@ ul {
   color: #ffffff;
 }
 
+#header.bg-second .nav-link.active {
+  color: #fd8f0a;
+}
+
 #header.bg-second .nav-link:hover {
   color: #fd8f0a;
 }
@@ -2828,6 +2841,13 @@ ul {
 #footer.bg-second .social-icon {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .trade-money {
+    width: 130%;
+    margin-right: -5.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2939,9 +2959,14 @@ ul {
     width: 300px;
     margin-left: 1.3rem;
   }
+  .trade-img {
+    width: 250px;
+  }
   .trade-money {
-    padding-right: 0rem;
-    width: 310px;
+    width: 320px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 5rem;
   }
   #app {
     padding: 5rem 0 0;
@@ -3042,6 +3067,15 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .trade-money {
+    width: 332px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6.5rem;
   }
 }
 
@@ -3157,13 +3191,13 @@ ul {
     margin-right: 0.8rem;
   }
   .trade-img {
-    width: 400px;
+    width: 350px;
   }
   .trade-money {
-    margin-top: 0;
     width: 400px;
-    margin-right: -3rem;
-    padding-right: 0;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6rem;
   }
   #app {
     padding: 6rem 0 0;
@@ -3297,8 +3331,10 @@ ul {
     margin-left: 0rem;
   }
   .trade-money {
-    width: 500px;
-    margin-top: -2rem;
+    width: 470px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 6rem;
   }
   .app-heading {
     font-size: 2.5rem;
@@ -3443,15 +3479,13 @@ ul {
     margin-right: 0.8rem;
   }
   .trade-img {
-    width: 499px;
+    width: 408px;
   }
   .trade-money {
-    margin-top: 0;
-    width: 500px;
-    margin-right: 0;
-    padding-right: 0;
+    width: 576px;
     height: auto;
-    display: block;
+    margin-right: 0;
+    margin-left: 3rem;
   }
   .app-heading {
     font-size: 3rem;
@@ -3489,9 +3523,32 @@ ul {
   #join {
     width: 800px;
   }
+}
+
+@media screen and (min-width: 1500px) {
   .trade-money {
-    margin-left: auto;
-    margin-right: -5rem;
+    width: 612px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .trade-money {
+    width: 657px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 12rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .trade-money {
+    width: 730px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 20rem;
   }
 }
 
@@ -3506,10 +3563,6 @@ ul {
   }
   .desktop-hero-img svg {
     width: 100%;
-  }
-  .trade-money {
-    width: 400px;
-    margin-right: -19.5rem;
   }
 }
 
@@ -3527,8 +3580,10 @@ ul {
     width: 100%;
   }
   .trade-money {
-    width: 700px;
-    margin-right: -23.5rem;
+    width: 767px;
+    height: auto;
+    margin-right: 0;
+    margin-left: 25rem;
   }
 }
 
@@ -3580,5 +3635,8 @@ ul {
   }
   .hero-img svg {
     width: 80%;
+  }
+  .trade-money {
+    width: 100%;
   }
 }

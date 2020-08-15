@@ -548,3 +548,11 @@ ul {
     }
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .about-hero-text {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
