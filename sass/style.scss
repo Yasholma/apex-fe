@@ -1483,3 +1483,13 @@ ul {
     margin: -5rem 0 -9rem;
   }
 }
+
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .hero-img {
+    margin: 6.5rem 0 -4rem;
+
+    svg {
+      width: 80%;
+    }
+  }
+}
