@@ -1,0 +1,177 @@
+@import "./variables";
+@import "./mixin";
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 1rem;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.career {
+  margin-top: 6rem;
+  height: auto;
+
+  &-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 1rem auto;
+  }
+
+  &-text {
+    font-size: 0.8rem;
+  }
+}
+
+.career-content {
+  margin-top: 1rem;
+  &-heading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $primaryColor;
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem auto;
+  }
+}
+
+.jobs {
+  margin-top: 1.5rem;
+  background: $jobsBgColor;
+  padding: 2rem;
+  max-width: 450px;
+
+  &-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.job-item {
+  margin-bottom: 0.8rem;
+}
+
+.job-link {
+  color: $primaryColor;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .career {
+    &-text {
+      max-width: 500px;
+      margin: 1rem auto;
+    }
+  }
+  .career-content {
+    &-heading,
+    &-text {
+      text-align: left;
+    }
+  }
+
+  .jobs {
+    &-title {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .career {
+    margin-top: 8rem;
+    &-heading {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    &-text {
+      font-size: 1rem;
+    }
+  }
+  .career-content {
+    &-heading {
+      margin: 2rem 0 1.3rem;
+      font-size: 1.6rem;
+    }
+    &-text {
+      max-width: 450px;
+      margin-left: 0;
+      font-size: 0.89rem;
+      line-height: 24px;
+    }
+  }
+
+  .jobs {
+    margin-top: 3rem;
+    width: 500px;
+  }
+
+  .job-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .job-link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .career {
+    &-text {
+      font-size: 1rem;
+    }
+  }
+  .career-content {
+    &-heading {
+      margin: 2rem 0 1.3rem;
+    }
+    &-text {
+      max-width: 550px;
+    }
+  }
+
+  .jobs {
+    max-width: 548px;
+  }
+}

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #464855;
+  font-size: 1rem;
+}
+
+a {
+  color: #464855;
+}
+
+a:hover {
+  color: #fd8f0a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.career {
+  margin-top: 6rem;
+  height: auto;
+}
+
+.career-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.career-text {
+  font-size: 0.8rem;
+}
+
+.career-content {
+  margin-top: 1rem;
+}
+
+.career-content-heading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fd8f0a;
+}
+
+.career-content-text {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem auto;
+}
+
+.jobs {
+  margin-top: 1.5rem;
+  background: #f7f8fa;
+  padding: 2rem;
+  max-width: 450px;
+}
+
+.jobs-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.job-item {
+  margin-bottom: 0.8rem;
+}
+
+.job-link {
+  color: #fd8f0a;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+}
+
+.job-link:hover {
+  color: #588b8b;
+}
+
+@media screen and (min-width: 768px) {
+  .career-text {
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  .career-content-heading, .career-content-text {
+    text-align: left;
+  }
+  .jobs-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .career {
+    margin-top: 8rem;
+  }
+  .career-heading {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  .career-text {
+    font-size: 1rem;
+  }
+  .career-content-heading {
+    margin: 2rem 0 1.3rem;
+    font-size: 1.6rem;
+  }
+  .career-content-text {
+    max-width: 450px;
+    margin-left: 0;
+    font-size: 0.89rem;
+    line-height: 24px;
+  }
+  .jobs {
+    margin-top: 3rem;
+    width: 500px;
+  }
+  .job-item {
+    margin-bottom: 1.5rem;
+  }
+  .job-link {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1399px) {
+  .career-text {
+    font-size: 1rem;
+  }
+  .career-content-heading {
+    margin: 2rem 0 1.3rem;
+  }
+  .career-content-text {
+    max-width: 550px;
+  }
+  .jobs {
+    max-width: 548px;
+  }
+}
+/*# sourceMappingURL=career.css.map */
