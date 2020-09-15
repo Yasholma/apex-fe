@@ -1,0 +1,162 @@
+@import "./variables";
+@import "./mixin";
+
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $mainFont;
+  color: $textColor;
+  font-size: 1rem;
+}
+
+a {
+  color: $textColor;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.contact {
+  padding: 6rem 0 2rem;
+  height: auto;
+  background: $bgColor;
+
+  &-heading {
+    margin: 1.2rem 0 1.5rem;
+  }
+
+  &-text {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+.address {
+  margin-top: 2rem;
+  &-text {
+    font-size: 0.8rem;
+  }
+}
+
+.contact-form {
+  margin-top: 1rem;
+  .label {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    background: #ffffff;
+    border: 0.5px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .form-control::placeholder {
+    color: #dddddd;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+}
+
+.map {
+  margin: 1.5rem 0;
+}
+
+#footer {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    &-heading {
+      margin-top: 2rem;
+    }
+    &-text {
+      max-width: 450px;
+      margin: auto;
+      font-size: 0.9rem;
+      line-height: 24px;
+    }
+  }
+
+  .address {
+    margin-top: 8rem;
+
+    &-text {
+      font-size: 0.9rem;
+      line-height: 24px;
+    }
+  }
+
+  .contact-form {
+    margin-top: 3rem;
+  }
+
+  .map {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .address,
+  .contact-form {
+    max-width: 500px;
+  }
+
+  .address {
+    margin-left: auto;
+  }
+
+  .contact {
+    &-heading {
+      font-size: 3rem;
+    }
+
+    &-text {
+      font-size: 1rem;
+      max-width: 550px;
+    }
+  }
+
+  .address {
+    &-text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1399px) {
+}

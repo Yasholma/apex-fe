@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #464855;
+  font-size: 1rem;
+}
+
+a {
+  color: #464855;
+}
+
+a:hover {
+  color: #fd8f0a;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.contact {
+  padding: 6rem 0 2rem;
+  height: auto;
+  background: #f4f8fc;
+}
+
+.contact-heading {
+  margin: 1.2rem 0 1.5rem;
+}
+
+.contact-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.address {
+  margin-top: 2rem;
+}
+
+.address-text {
+  font-size: 0.8rem;
+}
+
+.contact-form {
+  margin-top: 1rem;
+}
+
+.contact-form .label {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-control {
+  background: #ffffff;
+  border: 0.5px solid #cccccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+  color: #dddddd;
+  font-size: 0.8rem;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #dddddd;
+  font-size: 0.8rem;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #dddddd;
+  font-size: 0.8rem;
+}
+
+.contact-form .form-control::placeholder {
+  color: #dddddd;
+  font-size: 0.8rem;
+}
+
+.contact-form .btn-primary {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.map {
+  margin: 1.5rem 0;
+}
+
+#footer {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-heading {
+    margin-top: 2rem;
+  }
+  .contact-text {
+    max-width: 450px;
+    margin: auto;
+    font-size: 0.9rem;
+    line-height: 24px;
+  }
+  .address {
+    margin-top: 8rem;
+  }
+  .address-text {
+    font-size: 0.9rem;
+    line-height: 24px;
+  }
+  .contact-form {
+    margin-top: 3rem;
+  }
+  .map {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .address,
+  .contact-form {
+    max-width: 500px;
+  }
+  .address {
+    margin-left: auto;
+  }
+  .contact-heading {
+    font-size: 3rem;
+  }
+  .contact-text {
+    font-size: 1rem;
+    max-width: 550px;
+  }
+  .address-text {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
