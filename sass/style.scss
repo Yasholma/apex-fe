@@ -1,6 +1,6 @@
-@import './variables';
-@import './mixin';
-@import './animation';
+@import "./variables";
+@import "./mixin";
+@import "./animation";
 
 :root,
 * {
@@ -67,15 +67,15 @@ ul {
   @include menu_toggler;
 }
 
-.navbar-toggler[aria-expanded='true'] .bar {
+.navbar-toggler[aria-expanded="true"] .bar {
   background: transparent;
 }
 
-.navbar-toggler[aria-expanded='true'] .bar::before {
+.navbar-toggler[aria-expanded="true"] .bar::before {
   transform: rotate(45deg) translateY(11px);
 }
 
-.navbar-toggler[aria-expanded='true'] .bar::after {
+.navbar-toggler[aria-expanded="true"] .bar::after {
   transform: rotate(-45deg) translateY(-12px);
 }
 
@@ -483,6 +483,8 @@ ul {
     font-size: 0.8rem;
     padding: 0.6rem 1.3rem;
     border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 
     &:hover {
       background: $primaryColor;
@@ -570,7 +572,7 @@ ul {
     background: $whiteColor;
   }
 
-  .navbar-toggler[aria-expanded='true'] .bar {
+  .navbar-toggler[aria-expanded="true"] .bar {
     background: transparent;
   }
 

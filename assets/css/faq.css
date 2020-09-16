@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #464855;
+  font-size: 1rem;
+}
+
+.desktop {
+  display: none;
+}
+
+.faq {
+  padding: 6rem 0 5rem;
+  height: auto;
+  background: #fafafa;
+}
+
+.faq-heading {
+  margin: 1.2rem 0 1.5rem;
+}
+
+.faq-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.faq-sub-heading {
+  color: #fd8f0a;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.faq-sub-heading.with-hr {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #979797;
+}
+
+.faq-accord, .faq-sidebar {
+  margin-top: 2rem;
+}
+
+.faq-sidebar-item {
+  margin: 0.5rem 0;
+  border-bottom: 1px solid #979797;
+  padding: 1rem 0;
+}
+
+.faq-sidebar-link {
+  font-weight: 300;
+}
+
+.faq-accord .card {
+  margin-bottom: 1rem;
+  border-radius: 0;
+  background: #f7f8fa;
+  border: 0;
+  padding: auto 2rem;
+}
+
+.faq-accord .card-header {
+  border: none;
+  background: #f7f8fa;
+  border-bottom: 2px solid #fd8f0a;
+  width: 95%;
+  margin: auto;
+  padding: 0.5rem 0;
+}
+
+.faq-accord .card-header h2 {
+  font-family: Poppins;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-accord .card-header h2 .icon {
+  margin-right: 2rem;
+}
+
+.faq-accord .card-header h2 .icon svg {
+  width: 14px;
+}
+
+.faq-accord .card-header h2 .icon.open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 0.5rem;
+}
+
+.faq-accord .card-header h2 button {
+  font-weight: 600;
+  color: #464855;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 0.2rem;
+}
+
+.faq-accord .card-header h2 button:hover {
+  color: #fd8f0a;
+  text-decoration: none;
+}
+
+.faq-accord .card-body {
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+#footer {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+  .faq-sub-heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .faq-accord .card-header button {
+    font-size: 1rem;
+  }
+  .faq-accord .card-body {
+    font-size: 1rem;
+    padding: 1.4rem;
+  }
+}
+/*# sourceMappingURL=faq.css.map */
