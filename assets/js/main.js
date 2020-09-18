@@ -18,6 +18,7 @@ function WidthChange(mq) {
   }
 }
 
+// FAQ According handling
 $(function () {
   let allAccordions = document.querySelectorAll("#faqAccordion button");
   let allArrowDown = document.querySelectorAll("#faqAccordion .icon");
@@ -32,3 +33,21 @@ $(function () {
     });
   });
 });
+
+// Rate Mode Changer
+const sellBtn = document.querySelector("#sell");
+const buyBtn = document.querySelector("#buy");
+$(function () {
+  sellBtn.addEventListener("click", switchTab);
+  buyBtn.addEventListener("click", switchTab);
+});
+
+function switchTab() {
+  if (this.id === "sell") {
+    sellBtn.classList.add("mode-active");
+    buyBtn.classList.remove("mode-active");
+  } else {
+    buyBtn.classList.add("mode-active");
+    sellBtn.classList.remove("mode-active");
+  }
+}
