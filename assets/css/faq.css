@@ -94,20 +94,6 @@ body {
           align-items: center;
 }
 
-.faq-accord .card-header h2 .icon {
-  margin-right: 2rem;
-}
-
-.faq-accord .card-header h2 .icon svg {
-  width: 14px;
-}
-
-.faq-accord .card-header h2 .icon.open {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  margin-top: 0.5rem;
-}
-
 .faq-accord .card-header h2 button {
   font-weight: 600;
   color: #464855;
@@ -115,6 +101,21 @@ body {
   text-align: left;
   text-decoration: none;
   margin-top: 0.2rem;
+}
+
+.faq-accord .card-header h2 button .icon {
+  margin-right: 2rem;
+  display: inline-block;
+}
+
+.faq-accord .card-header h2 button .icon svg {
+  width: 14px;
+}
+
+.faq-accord .card-header h2 button .icon.open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 0.5rem;
 }
 
 .faq-accord .card-header h2 button:hover {

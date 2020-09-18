@@ -91,18 +91,6 @@ body {
       display: flex;
       align-items: center;
 
-      .icon {
-        margin-right: 2rem;
-        svg {
-          width: 14px;
-        }
-
-        &.open {
-          transform: rotate(180deg);
-          margin-top: 0.5rem;
-        }
-      }
-
       button {
         font-weight: 600;
         color: $textColor;
@@ -110,6 +98,19 @@ body {
         text-align: left;
         text-decoration: none;
         margin-top: 0.2rem;
+
+        .icon {
+          margin-right: 2rem;
+          display: inline-block;
+          svg {
+            width: 14px;
+          }
+
+          &.open {
+            transform: rotate(180deg);
+            margin-top: 0.5rem;
+          }
+        }
 
         &:hover {
           color: $primaryColor;
